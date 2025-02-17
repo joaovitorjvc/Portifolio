@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root {
+    --cor-primaria: #0C0317;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.home {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.conteudo {
+    padding: 8% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.apresentacao {
+    font-family: var(--fonte-secundaria);
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 40px;
+}
+
+.experiencia {
+    font-family: var(--fonte-secundaria);
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 40px;
+}
+.estudos {
+    font-family: var(--fonte-secundaria);
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 40px;
+}
+footer{
+    background-color:var(--cor-terciaria) ;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    
+}
