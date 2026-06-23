@@ -23,3 +23,11 @@ O site está disponível no GitHub Pages através do link:
 [https://joaovitorjvc.github.io/Portifolio/](https://joaovitorjvc.github.io/Portifolio/)
 
 ## 📂 Estrutura de arquivos
+Portifolio/
+├── index.html # Página inicial
+├── sobre.html # Página Sobre Mim
+├── certificacoes.html # Página de Certificações
+├── style.css # Estilos da página inicial
+├── style2.css # Estilos da página Sobre Mim
+├── style3.css # Estilos da página Certificações
+└── README.md # Este arquivo
