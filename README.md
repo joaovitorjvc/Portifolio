@@ -20,7 +20,7 @@ Este é um site estático com três páginas interligadas:
 ## 🌐 Acesse o site
 
 O site está disponível no GitHub Pages através do link:  
-[https://joaovitorjvc.github.io/Portifolio/](https://joaovitorjvc.github.io/Portifolio/)
+[https://joaovitorjvc.github.io/Portifolio/]([https://joaovitorjvc.github.io/Portifolio/](https://portifolio-c97f-eazo2ptk3-joao-vitors-projects-e2104fe2.vercel.app/))
 
 ## 📂 Estrutura de arquivos
 Portifolio/
