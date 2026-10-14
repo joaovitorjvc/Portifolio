@@ -3,73 +3,89 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início | Meu Portfólio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style1.css" />
+    <meta name="description" content="Portfólio de João Vitor de Carvalho, estudante de Ciência da Computação com foco em Cloud Computing, dados e MongoDB." />
+    <title>Início | João Vitor de Carvalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="btn">Início</a>
-            <a href="sobre.html" class="btn">Sobre Mim</a>
-            <a href="certifica.html" class="btn">Certificações</a>
-        </nav>
+<body data-page="home">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="João Vitor, página inicial">
+                <span class="brand-mark">JV</span>
+                <span class="brand-text">João Vitor<small>PORTFÓLIO</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Abrir menu</span>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+                <a href="index.html" data-page-link="home">Início</a>
+                <a href="sobre.html" data-page-link="about">Sobre Mim</a>
+                <a href="certifica.html" data-page-link="certifications">Certificações</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
- <section class="hero">
-            <h1>Bem-vindo ao meu portfólio</h1>
-            
-            <!-- Texto atualizado com as suas informações -->
-            <p>
-                Olá! Meu nome é <strong>João Vitor de Carvalho</strong>, tenho 22 anos e 
-                atualmente curso <strong>Ciência da Computação</strong> na 
-                <strong>Universidade de Brasília - UDF</strong>.
-            </p>
-            <p>
-                Sou apaixonado por tecnologia e estou constantemente buscando 
-                evoluir como profissional. Neste momento, meu foco principal está 
-                nos estudos de <strong>Cloud Computing</strong> (computação em nuvem) 
-                e <strong>bancos de dados não relacionais</strong>, com ênfase em 
-                <strong>MongoDB</strong>.
-            </p>
-            <p>
-                Acredito que a tecnologia tem o poder de transformar vidas e 
-                resolver problemas reais, e é isso que me motiva a estudar todos os dias.
-            </p>
+    <main class="site-main">
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-copy" data-reveal>
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Disponível para novos projetos</p>
+                <h1 id="hero-title">Tecnologia para transformar <span class="gradient-text">ideias reais.</span></h1>
+                <p class="hero-lead">Olá! Sou <strong>João Vitor de Carvalho</strong>, estudante de Ciência da Computação e apaixonado por Cloud Computing, dados e soluções que tornam o complexo mais simples.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="sobre.html">Conheça minha jornada <span aria-hidden="true">→</span></a>
+                    <a class="btn btn-ghost" href="#conexoes">Vamos conversar</a>
+                </div>
+                <ul class="hero-tags" aria-label="Áreas de foco">
+                    <li>Cloud Computing</li>
+                    <li>MongoDB</li>
+                    <li>Python para dados</li>
+                </ul>
+            </div>
 
-            <!-- Chamada final aberta para projetos e conversas -->
-            <p style="margin-top: 1.5rem; font-size: 1.2rem; background: #0000; padding: 1rem; border-radius: 8px; border-left: 4px solid #3498db;">
-                <strong>🚀 Estou aberto a novos projetos e adoro boas conversas!</strong> 
-                Se você tem uma ideia, precisa de ajuda em algo ou só quer trocar uma 
-                ideia sobre tecnologia, fique à vontade para me chamar. Vamos construir 
-                algo incrível juntos!
-            </p>
+            <div class="hero-visual" data-reveal data-delay="140" aria-hidden="true">
+                <div class="visual-orbit"></div>
+                <div class="visual-core"><img src="imagens/programando.jpg" alt="" /></div>
+                <div class="floating-card">
+                    <code>const foco = [<br />&nbsp;&nbsp;"cloud", "dados",<br />&nbsp;&nbsp;"aprendizado"<br />];</code>
+                </div>
+            </div>
         </section>
 
-        <section class="contato-botoes">
-    <h2>Conecte-se comigo</h2>
-    <div class="botoes-container">
-        <a href="https://www.linkedin.com/in/joaovitorjvcl/" target="_blank" class="btn btn-linkedin">
-            <img src="imagens/linkedin.png" alt="LinkedIn" width="27" height="24">
-            LinkedIn
-        </a>
-        <a href="mailto:joaovitorjvcl82@gmail.com" class="btn btn-gmail">
-            <img src="imagens/gmail.png" alt="Gmail" width="27" height="24">
-            Gmail
-        </a>
-        <a href="https://github.com/joaovitorjvc" target="_blank" class="btn btn-github">
-            <img src="imagens/github.png" alt="GitHub" width="27" height="24">
-            GitHub
-        </a>
-    </div>
+        <section class="section container" id="conexoes" aria-labelledby="connections-title" data-reveal>
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Onde me encontrar</p>
+                    <h2 id="connections-title">Conecte-se comigo</h2>
+                </div>
+                <p>Uma boa conversa pode virar um projeto incrível.</p>
+            </div>
+            <div class="social-grid">
+                <a class="social-card" href="https://www.linkedin.com/in/joaovitorjvcl/" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/linkedin.png" alt="" width="32" height="32" />
+                    <span><strong>LinkedIn</strong>Perfil profissional</span>
+                </a>
+                <a class="social-card" href="mailto:joaovitorjvcl82@gmail.com">
+                    <img src="imagens/gmail.png" alt="" width="32" height="32" />
+                    <span><strong>E-mail</strong>Envie uma mensagem</span>
+                </a>
+                <a class="social-card" href="https://github.com/joaovitorjvc" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/github.png" alt="" width="32" height="32" />
+                    <span><strong>GitHub</strong>Projetos e código</span>
+                </a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 João Vitor de Carvalho. Todos os direitos reservados.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span data-year></span> João Vitor de Carvalho.</p>
+            <p>Feito com <span>curiosidade</span> e código.</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -3,68 +3,75 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre Mim | Meu Portfólio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css" />
+    <meta name="description" content="Conheça a trajetória, as habilidades e os interesses de João Vitor de Carvalho." />
+    <title>Sobre Mim | João Vitor de Carvalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="btn">Início</a>
-            <a href="sobre.html" class="btn">Sobre Mim</a>
-            <a href="certifica.html" class="btn">Certificações</a>
-        </nav>
+<body data-page="about">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="João Vitor, página inicial">
+                <span class="brand-mark">JV</span>
+                <span class="brand-text">João Vitor<small>PORTFÓLIO</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Abrir menu</span>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+                <a href="index.html" data-page-link="home">Início</a>
+                <a href="sobre.html" data-page-link="about">Sobre Mim</a>
+                <a href="certifica.html" data-page-link="certifications">Certificações</a>
+            </nav>
+        </div>
     </header>
 
-<main>
-    <section class="sobre">
-        <h1>Sobre Mim</h1>
-        
-        <p>
-            Meu nome é <strong>João Vitor de Carvalho</strong>, tenho 22 anos e atualmente curso 
-            <strong>Ciência da Computação</strong> na <strong>Universidade de Brasília - UDF</strong>. 
-            Sou apaixonado por tecnologia e estou sempre em busca de aprendizado e novos desafios 
-            que me permitam crescer como profissional e como pessoa.
-        </p>
+    <main class="site-main">
+        <section class="page-header container" aria-labelledby="about-title" data-reveal>
+            <p class="eyebrow">Minha trajetória</p>
+            <h1 id="about-title">Aprender, experimentar e <span class="gradient-text">evoluir.</span></h1>
+            <p class="page-lead">Sou estudante de Ciência da Computação na Universidade de Brasília - UDF e gosto de transformar cada desafio em uma oportunidade de construir algo melhor.</p>
+        </section>
 
-        <p>
-            Atualmente, meu foco principal está nos estudos de <strong>Cloud Computing</strong> 
-            (computação em nuvem) e <strong>bancos de dados não relacionais</strong>, com ênfase 
-            no <strong>MongoDB</strong>. Acredito que essas tecnologias são fundamentais para 
-            construir sistemas escaláveis, flexíveis e preparados para as demandas do mercado atual.
-        </p>
+        <section class="about-layout container" aria-label="Perfil e áreas de foco">
+            <article class="content-panel" data-reveal data-delay="100">
+                <p>Meu nome é <strong>João Vitor de Carvalho</strong>, tenho 22 anos e estou sempre em busca de aprendizado e novos desafios que me permitam crescer como profissional e como pessoa.</p>
+                <p>Atualmente, meu foco principal está nos estudos de <strong>Cloud Computing</strong> e <strong>bancos de dados não relacionais</strong>, com ênfase no <strong>MongoDB</strong>. Acredito que essas tecnologias são fundamentais para construir sistemas escaláveis, flexíveis e preparados para as demandas do mercado atual.</p>
+                <p>Tenho experiência com <strong>Python</strong>, principalmente na manipulação e análise de dados, utilizando bibliotecas como Pandas, NumPy e Matplotlib para transformar dados brutos em informações úteis.</p>
+                <p>No desenvolvimento front-end, possuo conhecimentos em <strong>HTML, CSS e JavaScript</strong>, criando interfaces responsivas, interativas e com boa usabilidade.</p>
+                <p>Também já atuei em <strong>implementações de servidores em nuvem</strong>, desenvolvendo uma visão prática sobre infraestrutura, deploy de aplicações e gerenciamento de ambientes distribuídos.</p>
+                <p class="quote">“Estou sempre aberto a aprender novas tecnologias e colaborar em projetos inovadores.”</p>
+            </article>
 
-        <p>
-            Tenho experiência com <strong>Python</strong>, principalmente na área de 
-            <strong>manipulação e análise de dados</strong>, utilizando bibliotecas como 
-            Pandas, NumPy e Matplotlib para transformar dados brutos em informações úteis.
-        </p>
+            <aside class="focus-panel" data-reveal data-delay="200">
+                <h2>O que me move</h2>
+                <ul class="focus-list">
+                    <li>Resolver problemas reais</li>
+                    <li>Explorar novas tecnologias</li>
+                    <li>Construir soluções escaláveis</li>
+                    <li>Compartilhar conhecimento</li>
+                </ul>
+                <ul class="skill-cloud" aria-label="Tecnologias e habilidades">
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>MongoDB</li>
+                    <li>Cloud</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
 
-        <p>
-            No <strong>desenvolvimento front-end</strong>, possuo conhecimentos em 
-            <strong>HTML, CSS e JavaScript</strong>, o que me permite criar interfaces 
-            responsivas, interativas e com boa usabilidade.
-        </p>
-
-        <p>
-            Além disso, já atuei em <strong>implementações de servidores no formato de nuvem</strong>, 
-            o que me proporcionou uma visão prática sobre infraestrutura, deploy de aplicações e 
-            gerenciamento de ambientes distribuídos. Essa experiência me preparou para lidar com 
-            projetos reais e com os desafios do dia a dia de um desenvolvedor.
-        </p>
-
-        <p style="margin-top: 1.5rem; background: #0000; padding: 1rem; border-radius: 8px; border-left: 4px solid #3498db;">
-            💡 Estou sempre aberto a aprender novas tecnologias e a colaborar em projetos 
-            inovadores. Se você tem uma ideia, um desafio ou quer trocar uma ideia sobre 
-            tecnologia, fique à vontade para entrar em contato!
-        </p>
-    </section>
-</main>
-
-    <footer>
-        <p>&copy; 2025 João Vitor de Carvalho. Todos os direitos reservados.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span data-year></span> João Vitor de Carvalho.</p>
+            <p>Feito com <span>curiosidade</span> e código.</p>
+        </div>
     </footer>
 </body>
 </html>

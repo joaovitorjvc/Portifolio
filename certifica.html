@@ -3,56 +3,107 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certificações | João Vitor</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style3.css" /> <!-- Usaremos um CSS específico, mas pode ser o mesmo do index -->
+    <meta name="description" content="Formação acadêmica e certificações de João Vitor de Carvalho em tecnologia." />
+    <title>Certificações | João Vitor de Carvalho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="btn">Início</a>
-            <a href="sobre.html" class="btn">Sobre Mim</a>
-            <a href="certificacoes.html" class="btn">Certificações</a>
-        </nav>
+<body data-page="certifications">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="João Vitor, página inicial">
+                <span class="brand-mark">JV</span>
+                <span class="brand-text">João Vitor<small>PORTFÓLIO</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Abrir menu</span>
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+                <a href="index.html" data-page-link="home">Início</a>
+                <a href="sobre.html" data-page-link="about">Sobre Mim</a>
+                <a href="certifica.html" data-page-link="certifications">Certificações</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="certificacoes">
-            <h1>Minhas Certificações</h1>
-            <p class="intro">Esta é minha página de certificações, onde incluem a faculdade que estou realizando e cursos feitos.</p>
-            
-            <div class="cert-item">
-                <h2>🎓Ciência da Computação</h2>
-                <p><strong>4º semestre</strong> – Universidade de Brasília - UDF (cursando)</p>
-            </div>
-            
-            <div class="cert-item">
-                <h2>☁️Curso Escola da Nuvem</h2>
-                <p><strong>Fundamentos da Computação em Nuvem</strong> – com finalidade do Cloud Practitioner, 5 meses de duração (cursando)</p>
-            </div>
-            
-            <div class="cert-item">
-                <h2>🍃MongoDB Overview</h2>
-                <p><strong>Fundamentos em MongoDB</strong> – 2 horas de duração (concluído)</p>
+    <main class="site-main">
+        <section class="page-header container" aria-labelledby="certifications-title" data-reveal>
+            <p class="eyebrow">Aprendizado contínuo</p>
+            <h1 id="certifications-title">Conhecimento em <span class="gradient-text">movimento.</span></h1>
+            <p class="page-lead">Minha formação acadêmica e os cursos que ajudam a construir meu caminho em tecnologia.</p>
+        </section>
+
+        <section class="certifications-section container" aria-labelledby="certifications-list-title">
+            <div class="cert-toolbar" data-reveal>
+                <div>
+                    <h2 class="sr-only" id="certifications-list-title">Lista de certificações</h2>
+                    <div class="filter-group" role="group" aria-label="Filtrar certificações">
+                        <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+                        <button class="filter-btn" type="button" data-filter="ongoing" aria-pressed="false">Em andamento</button>
+                        <button class="filter-btn" type="button" data-filter="completed" aria-pressed="false">Concluídos</button>
+                    </div>
+                </div>
+                <span class="cert-count" data-cert-count aria-live="polite"></span>
             </div>
 
-            <div class="cert-item">
-                <h2>🍃 MongoDB - Relational to Document Model</h2>
-                <p><strong>Modelagem relacional para documento</strong> – 
-        Duração: 1 hora e meia (concluído)</p>
-            </div>
-            
-            <div class="cert-item">
-                <h2>🐍Python para Dados</h2>
-                <p><strong>Fundamentos em Python para Dados</strong> – 10 horas de carga horária (concluído)</p>
+            <div class="cert-grid">
+                <article class="cert-card" data-status="ongoing" data-reveal data-delay="80">
+                    <div class="cert-card-header">
+                        <span class="cert-icon" aria-hidden="true">🎓</span>
+                        <span class="cert-status status-ongoing">Em andamento</span>
+                    </div>
+                    <h2>Ciência da Computação</h2>
+                    <p><strong>4º semestre</strong> — Universidade de Brasília - UDF</p>
+                </article>
+
+                <article class="cert-card" data-status="ongoing" data-reveal data-delay="140">
+                    <div class="cert-card-header">
+                        <span class="cert-icon" aria-hidden="true">☁️</span>
+                        <span class="cert-status status-ongoing">Em andamento</span>
+                    </div>
+                    <h2>Curso Escola da Nuvem</h2>
+                    <p><strong>Fundamentos da Computação em Nuvem</strong> — formação com finalidade Cloud Practitioner.</p>
+                </article>
+
+                <article class="cert-card" data-status="completed" data-reveal data-delay="200">
+                    <div class="cert-card-header">
+                        <span class="cert-icon" aria-hidden="true">🍃</span>
+                        <span class="cert-status status-completed">Concluído</span>
+                    </div>
+                    <h2>MongoDB Overview</h2>
+                    <p><strong>Fundamentos em MongoDB</strong> — 2 horas de duração.</p>
+                </article>
+
+                <article class="cert-card" data-status="completed" data-reveal data-delay="260">
+                    <div class="cert-card-header">
+                        <span class="cert-icon" aria-hidden="true">🍃</span>
+                        <span class="cert-status status-completed">Concluído</span>
+                    </div>
+                    <h2>MongoDB — Relational to Document Model</h2>
+                    <p><strong>Modelagem relacional para documento</strong> — 1 hora e meia.</p>
+                </article>
+
+                <article class="cert-card" data-status="completed" data-reveal data-delay="320">
+                    <div class="cert-card-header">
+                        <span class="cert-icon" aria-hidden="true">🐍</span>
+                        <span class="cert-status status-completed">Concluído</span>
+                    </div>
+                    <h2>Python para Dados</h2>
+                    <p><strong>Fundamentos em Python para Dados</strong> — 10 horas de carga horária.</p>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 João Vitor de Carvalho. Todos os direitos reservados.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span data-year></span> João Vitor de Carvalho.</p>
+            <p>Feito com <span>curiosidade</span> e código.</p>
+        </div>
     </footer>
 </body>
 </html>
